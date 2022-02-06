@@ -26,10 +26,16 @@ def recommend(movie):
     return recommended_movies, recommended_movies_posters
 
 
+<<<<<<< HEAD
 movies = pickle.load(open('movies.pkl','rb'))
 
 similarity  = pickle.load(open('similarity.pkl', 'rb'))
 st.title('Movie Recommendation App')
+=======
+st.header('Movie Recommender System')
+movies = pickle.load(open('model/movie_list.pkl','rb'))
+similarity = pickle.load(open('model/similarity.pkl','rb'))
+>>>>>>> 2ddebe6aa898794a2f7b788cd75c8b2b9c9ad55e
 
 selected_movie = st.selectbox(
 'Select a movie to get recommendations',
