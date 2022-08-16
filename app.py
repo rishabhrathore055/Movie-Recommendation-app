@@ -26,7 +26,6 @@ def recommend(movie):
     return recommended_movies, recommended_movies_posters
 
 
-
 movies = pickle.load(open('movies.pkl','rb'))
 similarity  = pickle.load(open('similarity.pkl', 'rb'))
 st.title('Movie Recommendation App')
