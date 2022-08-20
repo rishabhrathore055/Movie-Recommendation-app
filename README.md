@@ -1,4 +1,5 @@
 # Movie-Recommendation-app
+<<<<<<< HEAD
 
 **This is a content-based movie recommendation system that uses text Vectorization method Bag of Words (BoW) Term Frequency, and some advanced Python libraries like Nltk, Numpy, pandas, and streamlit for a better User Interface.**
 
@@ -19,3 +20,6 @@ pip install nltk
 
 ```
 
+=======
+A content-based movie recommendation system that uses text Vectorization method Bag of Words (BoW) Term Frequency, and some advanced Python libraries like Nltk, Numpy, pandas, and streamlit for a better User Interface.
+>>>>>>> 39d1da2cb1f158276c6fc74e68b4d9087d748c27
