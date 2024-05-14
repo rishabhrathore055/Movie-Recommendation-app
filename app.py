@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import pickle
 import requests
+from requests.exceptions import Timeout, RequestException
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=13f47a39b05529f6e82312c80039a0e9&language=en-US".format(movie_id)
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
@@ -57,7 +58,6 @@ if st.button('Get Recommendations'):
     with col5:
         st.text(names[4])
         st.image(posters[4])      
-
 
 hide_streamlit_style = """
             <style>
